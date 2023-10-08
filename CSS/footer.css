@@ -1,0 +1,99 @@
+footer {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+footer .content {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2rem;
+}
+
+footer .content .box {
+  max-width: 25%;
+}
+
+footer .content p {
+  font-size: 0.6rem;
+}
+
+footer .content .socialLinks {
+  margin-top: 2rem;
+}
+
+footer .content .socialLinks div {
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: black;
+  position: relative;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+
+footer .content .socialLinks div::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(101%);
+  border-radius: 50px;
+  transition: 0.3s ease-in;
+}
+
+footer .content .socialLinks div:hover::after {
+  transform: translateY(0%);
+  border-radius: 0;
+}
+
+footer .content .socialLinks div:hover {
+  color: white;
+}
+
+footer .heading {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  /* text-decoration: none; */
+  color: grey;
+  font-size: 0.8rem;
+}
+
+footer a:hover {
+  text-decoration: 1px solid black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1122px) {
+}
+
+@media screen and (max-width: 980px) {
+  footer .content {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .content .box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+}
+
+@media screen and (max-width: 280px) {
+}

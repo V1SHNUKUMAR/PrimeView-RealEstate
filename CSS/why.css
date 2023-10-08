@@ -1,0 +1,110 @@
+.whySection {
+  justify-content: end;
+}
+
+.whySection .content {
+  color: white;
+  width: 95%;
+  padding: 2rem 3rem;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  /* gap: 5rem; */
+  border-radius: 30px 0 0 30px;
+}
+
+.whySection .content .img {
+  height: 23rem;
+  width: 23rem;
+  transform: translateY(70px);
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.whySection .content .img img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.whySection .content .desc {
+  max-width: 45%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.whySection .content .desc h3 {
+  font-size: 3rem;
+}
+
+.whySection .content .desc .dot {
+  height: 1px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 0.75rem;
+}
+
+.whySection .content .desc li {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.whySection .content .desc p {
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1122px) {
+  .whySection .content {
+    flex-direction: column;
+  }
+  .whySection .content .img {
+    transform: none;
+    border-radius: 50% 50% 0 0;
+    height: 50%;
+    max-height: 500px;
+    width: auto;
+    aspect-ratio: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .whySection .content .desc {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whySection .content {
+    padding: 2rem 1.5rem;
+  }
+  .whySection .content .img {
+    transform: none;
+    border-radius: 50% 50% 0 0;
+    height: 90%;
+    width: auto;
+    aspect-ratio: 1;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .whySection .content {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+}

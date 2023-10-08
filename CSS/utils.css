@@ -1,0 +1,61 @@
+main {
+  position: relative;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.customBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* transition-delay: 0.1s; */
+  transition: all 0.3s;
+}
+
+.customBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: -1;
+  transform: translateY(101%);
+  transition: 0.3s ease-in;
+  /* transition-delay: 0.1s; */
+  border-radius: 50px;
+}
+
+.customBtn:hover::before {
+  transform: translateY(0%);
+  border-radius: 0px;
+}
+
+.customBtn:hover {
+  color: white;
+}
+
+.customBtn:hover i {
+  border-color: white;
+  transition-delay: 0.1s;
+}
+
+.customBtn i {
+  /* font-size: 1.5rem; */
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.3rem;
+}

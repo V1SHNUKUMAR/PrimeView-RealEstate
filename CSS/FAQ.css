@@ -1,0 +1,80 @@
+.FAQSection .content {
+  width: 100%;
+  max-width: 70%;
+}
+
+.FAQSection .content .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQSection .content .heading h4 {
+  font-size: 2rem;
+}
+
+.FAQSection .content .queList {
+  list-style: none;
+  margin: 2rem auto;
+}
+
+.FAQSection .content .queList .accordion {
+  /* background-color: #eee; */
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+.FAQSection .content .queList li:nth-last-child(1) .accordion {
+  border: none;
+}
+
+.FAQSection .content .queList .active,
+.FAQSection .content .queList .accordion:hover {
+  background-color: #ccc;
+}
+
+.ans {
+  font-size: 0.8rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "+";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.queList .active:after {
+  content: "-";
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1122px) {
+}
+
+@media screen and (max-width: 790px) {
+  .FAQSection .content {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+}
+
+@media screen and (max-width: 280px) {
+}

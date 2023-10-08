@@ -1,0 +1,76 @@
+.saleSection .content {
+  /* width: 80%; */
+  width: 100%;
+  max-width: 75%;
+}
+
+.saleSection .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.saleSection .heading h2 {
+  font-size: 2rem;
+}
+
+.saleSection .content .heading .desc {
+  max-width: 35%;
+  text-align: end;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+}
+
+.grid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.grid div {
+  /* width: 3rem; */
+  /* height: 10rem;
+  width: 10rem; */
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.grid div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1222px) {
+}
+
+@media screen and (max-width: 768px) {
+  .saleSection .content {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .saleSection .heading {
+    flex-direction: column;
+  }
+
+  .saleSection .content .heading .desc {
+    text-align: start;
+    max-width: 90%;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 280px) {
+}
